@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--Strona z biblioteką Bootstrap 5.1-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Montech Serwis was founded in Gdansk, Poland in 2001. The founders have long experience in the shipbuilding, ship repair and oil and gas sector. Over the years we have completed many successful projects with many of the biggest names in the cruise and oil and gas sector.">
+    <meta name="keywords" content="Montech Serwis, ships, welding, plumbing, piping, repair,stainless steel, aluminium">
+    <link href="style.css" rel="stylesheet">
+    <title>Montech Service Marine</title>
+    <!-- Bootstrap css CDN-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"/>
+</head>
+<body>
+    <nav class="navbar navbar-custom">
+        <div class="container-md">
+            <div class="logo">
+                <img src="Logo_header.png" width="200" height="140" alt="Logo Montech Service">
+            </div> 
+            <div class="buttons">
+              <div class="langWarp">
+                <center>
+                  <a class="hrefv1"id="linki" href="index.html" class="btn btn-info btn-lg" role="button">About Us</a>
+                  <a class="hrefv3"id="linki" href="Projects.html" class="btn btn-info btn-lg" role="button">Projects</a>
+                  <a class="hrefv4"id="linki" href="Contact.html" class="btn btn-info btn-lg" role="button">Contact Us</a>
+                  <button language="english" class="active" id="linki" class="btn btn-info btn-lg"><img src="eng.png" alt="Angielski język"></button>
+                  <button language="polish" id="linki" class="btn btn-info btn-lg"><img src="flaga-polski.png" alt="Polski język"></button>
+              </center>
+                <script>
+                  const langELv1 = document.querySelector('.langWarp');
+                  const butElv1 = document.querySelectorAll('button');
+                  const titleElv1 = document.querySelector('.hrefv1');
+                  const titleElv3 = document.querySelector('.hrefv3');
+                  const titleElv4 = document.querySelector('.hrefv4');
+                  butElv1.forEach(el =>{
+                    el.addEventListener('click', () =>
+                    {
+                      langELv1.querySelector('.active').classList.remove('active');
+                      el.classList.add('active');
+                      const attr = el.getAttribute('language');
+                      titleElv1.textContent= datav1[attr].hrefv1;
+                      titleElv3.textContent= datav1[attr].hrefv3;
+                      titleElv4.textContent= datav1[attr].hrefv4;
+                    });
+                  });
+                  var datav1 = {
+                    "english":
+                    {
+                      "hrefv1": "About Us",
+                      "hrefv3": "Projects",
+                      "hrefv4": "Contact Us",
+
+                    },
+          
+                    "polish":
+                    {
+                      "hrefv1": "O Nas",
+                      "hrefv3": "Projekty",
+                      "hrefv4": "Kontakty",
+                    }
+                  }
+                </script>
+              </div>
+            </div>
+        </div>
+      </nav>
+      <main>
+        <div class="mainIndex">
+        <div class="container-md" class="textIndex">
+          <h1 class="text1">About Us :</h1>
+          <h3 class="text2">Montech Serwis was founded in Gdansk, Poland in 2001.</h3>
+            <p class="text3">The founders have long experience in the shipbuilding, ship repair and oil and gas sector. Over the years we have completed many successful projects with many of the biggest names in the cruise and oil and gas sector.</p>
+            <p class="text4">We are your full service marine contractor. From Prefabrication in our workshop in Gdansk to dry dock we will be there for you. We offer a wide range of services and special welding.</p>
+          <br>
+          <p class="text5">Our skilled workers are standing by to perform any necessary repair or retrofit.</p>
+          <br>
+          <p class="text6">We customize our work to fullfill the requierment of our customers. Working together with the customer and finding and deliver a solution is our strengh.</p>
+          <br>
+          <h3 class="text7">Our services</h3>
+          <p class="text8">We provide  services with excellent quality  projects . Our services include installation of equipment on board cruise vessels, such as plumbing , sprinkler systems, galleys equpment ,  mechanical service and structural steel work. This have allowed us to work with and for manu large crusieship and commercal shipping companies and also oil and gas. industry.</p>
+          <p class="text9">Prefabication of modules for the offshore gas and oil industry as well for the ships and  land factories</p>
+          <ul>
+            <li class="text10">Certified welding</li>
+            <li class="text11">Pipe installation</li>
+            <li class="text12">GF plastic piping system</li>
+            <li class="text13">Small to medium steel prefabrication</li>
+            <li class="text14">General steelwork</li>
+            <li class="text15">Specialty work in stainless steel and Aluminum</li>
+          </ul>
+          <script>
+            const langELv2 = document.querySelector('.langWarp');
+            const butElv2 = document.querySelectorAll('button');
+            const titleElv11 = document.querySelector('.text1');
+            const titleElv12 = document.querySelector('.text2');
+            const titleElv13 = document.querySelector('.text3');
+            const titleElv14 = document.querySelector('.text4');
+            const titleElv15 = document.querySelector('.text5');
+            const titleElv16 = document.querySelector('.text6');
+            const titleElv17 = document.querySelector('.text7');
+            const titleElv18 = document.querySelector('.text8');
+            const titleElv19 = document.querySelector('.text9');
+            const titleElv110 = document.querySelector('.text10');
+            const titleElv111 = document.querySelector('.text11');
+            const titleElv112 = document.querySelector('.text12');
+            const titleElv113 = document.querySelector('.text13');
+            const titleElv114 = document.querySelector('.text14');
+            const titleElv115 = document.querySelector('.text15');
+            butElv2.forEach(el =>{
+              el.addEventListener('click', () =>
+              {
+                langELv2.querySelector('.active').classList.remove('active');
+                el.classList.add('active');
+                const attr = el.getAttribute('language');
+                titleElv11.textContent= datav2[attr].text1;
+                titleElv12.textContent= datav2[attr].text2;
+                titleElv13.textContent= datav2[attr].text3;
+                titleElv14.textContent= datav2[attr].text4;
+                titleElv15.textContent= datav2[attr].text5;
+                titleElv16.textContent= datav2[attr].text6;
+                titleElv17.textContent= datav2[attr].text7;
+                titleElv18.textContent= datav2[attr].text8;
+                titleElv19.textContent= datav2[attr].text9;
+                titleElv110.textContent= datav2[attr].text10;
+                titleElv111.textContent= datav2[attr].text11;
+                titleElv112.textContent= datav2[attr].text12;
+                titleElv113.textContent= datav2[attr].text13;
+                titleElv114.textContent= datav2[attr].text14;
+                titleElv115.textContent= datav2[attr].text15;
+              });
+            });
+            var datav2 = {
+              "english":
+              {
+                "text1": "About Us :",
+                "text2": "Montech Serwis was founded in Gdansk, Poland in 2001.",
+                "text3": "The founders have long experience in the shipbuilding, ship repair and oil and gas sector. Over the years we have completed many successful projects with many of the biggest names in the cruise and oil and gas sector.",
+                "text4": "We are your full service marine contractor. From Prefabrication in our workshop in Gdansk to dry dock we will be there for you. We offer a wide range of services and special welding.",
+                "text5": "Our skilled workers are standing by to perform any necessary repair or retrofit.",
+                "text6": "We customize our work to fullfill the requierment of our customers. Working together with the customer and finding and deliver a solution is our strengh.",
+                "text7": "Our services:",
+                "text8": "We provide  services with excellent quality  projects . Our services include installation of equipment on board cruise vessels, such as plumbing , sprinkler systems, galleys equpment ,  mechanical service and structural steel work. This have allowed us to work with and for manu large crusieship and commercal shipping companies and also oil and gas. industry.",
+                "text9": "Prefabication of modules for the offshore gas and oil industry as well for the ships and  land factories",
+                "text10": "Certified welding",
+                "text11": "Pipe installation",
+                "text12": "GF plastic piping system",
+                "text13": "Small to medium steel prefabrication",
+                "text14": "General steelwork",
+                "text15": "Specialty work in stainless steel and Aluminum",
+              },
+    
+              "polish":
+              {
+                "text1": "O Nas :",
+                "text2": "Firma została założona w Gdańsku w roku 2001. ",
+                "text3": "Założyciele posiadają szerokie doświadczenie i wiedzę w zakresie budowy i napraw statków, jak i z sektora naftowo-gazowego. Na przestrzeni lat wykonaliśmy wiele projektów przy współpracy z największymi markami w tych dziedzinach. ",
+                "text4": "Jesteśmy gotowi do spełnienia najwyższych oczekiwań klientów. Od przygotowań w naszym warsztacie do instalacji na statkach. Mamy w ofercie szeroki zakres specjalistycznych prac. ",
+                "text5": "Nasi wykwalifikowani pracownicy są gotowi do wykonania wszelkich niezbędnych napraw lub modernizacji. ",
+                "text6": "Dostosowujemy naszą pracę, aby spełnić wymagania naszych klientów. Naszą mocną stroną jest współpraca z klientem oraz znalezienie i dostarczenie optymalnego rozwiązania. ",
+                "text7": "Nasze usługi: ",
+                "text8": "Najważniejsza jest dla nas wysoka jakość wykonywanych projektów. Nasze usługi obejmują montaż urządzeń na pokładach statków wycieczkowych, takich jak instalacje wodno-kanalizacyjne, instalacje natryskowe, wyposażenie kuchni, serwis mechaniczny oraz prace przy konstrukcjach  stalowych. Umożliwiło nam to współpracę z dużymi firmami żeglugowymi i komercyjnymi, a także dla firm zajmujących się przemysłem ciężkim.",
+                "text9": "Przykładowe prace: ",
+                "text10": "Spawanie ",
+                "text11": "Instalacje rurowe ",
+                "text12": "Produkcja elementów stalowych  ",
+                "text13": "Small to medium steel prefabrication",
+                "text14": "Prace ze stalą ",
+                "text15": "Specjalistyczne prace ze stalą nierdzewną i aluminium",
+              }
+            }
+          </script>
+        </div>
+      </div>
+      </main>
+
+ <footer class="text-center text-white ">
+   <br>
+   <section class="sec">
+    <marquee class="marquee"  behavior="scroll" direction="left" scrollamount="24">
+      <h1>
+    <img class="firmy" src="firma1.png" alt="Blucher">
+    <img class="firmy" src="firma2.jpg"alt="Gebierit">
+    <img class="firmy" src="firma3.png"alt="+GF+">
+    <img class="firmy" src="firma4.png"alt="Marigiff">
+    <img class="firmy" src="firma5.jpg"alt="Parker">
+    <img class="firmy" src="firma6.jpg"alt="Roxtec">
+    <img class="firmy" src="firma7.png"alt="Viege">
+   </h1>
+  </marquee>
+ </section>
+ </footer>
+    <!-- Bootstrap js CDN-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
+    crossorigin="anonymous">
+</script>
+</body>
+</html>
+
+<!-- Jak używać bootstrapa: 
+- <div class="nazwadiva-fluid"> - pełen ekran
+- <div class="nazwadiva-md"> - wyśrodkowanie    
+-->

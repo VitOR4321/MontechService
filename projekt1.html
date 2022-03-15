@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Montech Serwis was founded in Gdansk, Poland in 2001. The founders have long experience in the shipbuilding, ship repair and oil and gas sector. Over the years we have completed many successful projects with many of the biggest names in the cruise and oil and gas sector.">
+    <meta name="keywords" content="Montech Serwis, ships, welding, plumbing, piping, repair,stainless steel, aluminium">
+    <link href="style.css" rel="stylesheet">
+    <title>Montech Service Marine</title>
+    <!-- Bootstrap css CDN-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"/>
+    <!--Kod do pokazania projektów-->
+    <script>
+      function pokaz1() {
+const targetDiv1 = document.getElementById("projekt1");
+const targetDiv2 = document.getElementById("projekt2");
+const targetDiv3 = document.getElementById("projekt3");
+const targetDiv4 = document.getElementById("projekt4");
+const d1 = document.getElementById("dane1");
+const btn = document.getElementById("link1");
+
+if (targetDiv1.style.display !== "none"&&targetDiv2.style.display !== "none"&&targetDiv3.style.display !== "none"&&targetDiv4.style.display !== "none") {
+targetDiv1.style.display = "none";
+targetDiv2.style.display = "none";
+targetDiv3.style.display = "none";
+targetDiv4.style.display = "none";
+d1.style.display = "block";
+} 
+else {
+targetDiv1.style.display = "block";
+targetDiv2.style.display = "block";
+targetDiv3.style.display = "block";
+targetDiv4.style.display = "block";
+d1.style.display = "none";
+}
+};
+    </script>
+</head>
+<body>
+    <nav class="navbar navbar-custom">
+        <div class="container-md">
+            <div class="logo">
+                <img src="Logo_header.png" width="200" height="140" alt="Logo Montech Service">
+            </div> 
+            <div class="buttons">
+              <div class="langWarp">
+                <center>
+                    <a class="hrefv1"id="linki" href="index.html" class="btn btn-info btn-lg" role="button">About Us</a>
+                    <a class="hrefv3"id="linki" href="Projects.html" class="btn btn-info btn-lg" role="button">Projects</a>
+                    <a class="hrefv4"id="linki" href="Contact.html" class="btn btn-info btn-lg" role="button">Contact Us</a>
+                    <button language="english" class="active" id="linki" class="btn btn-info btn-lg"><img src="eng.png" alt="Angielski język"></button>
+                    <button language="polish" id="linki" class="btn btn-info btn-lg"><img src="flaga-polski.png" alt="Polski język"></button>
+                </center>
+                <script>
+                  const langELv1 = document.querySelector('.langWarp');
+                  const butElv1 = document.querySelectorAll('button');
+                  const titleElv1 = document.querySelector('.hrefv1');
+                  const titleElv3 = document.querySelector('.hrefv3');
+                  const titleElv4 = document.querySelector('.hrefv4');
+                  butElv1.forEach(el =>{
+                    el.addEventListener('click', () =>
+                    {
+                      langELv1.querySelector('.active').classList.remove('active');
+                      el.classList.add('active');
+                      const attr = el.getAttribute('language');
+                      titleElv1.textContent= datav1[attr].hrefv1;
+                      titleElv3.textContent= datav1[attr].hrefv3;
+                      titleElv4.textContent= datav1[attr].hrefv4;
+                    });
+                  });
+                  var datav1 = {
+                    "english":
+                    {
+                      "hrefv1": "About Us",
+                      "hrefv3": "Projects",
+                      "hrefv4": "Contact Us",
+
+                    },
+          
+                    "polish":
+                    {
+                      "hrefv1": "O Nas",
+                      "hrefv3": "Projekty",
+                      "hrefv4": "Kontakty",
+                    }
+                  }
+                </script>
+              </div>
+            </div>
+        </div>
+      </nav>
+      <main>
+        <div class="mainProjects">
+        <div class="container-md">
+            <div class="dane1"></div>
+            <center>
+            <h1 class="tytul1">Project on Marella Discovery 2</h1>
+            </center>
+                <p class="text1">Jan/Feb 2022</p>
+                <p class="text2"> During Marella Discovery II dry dock in Cadiz, Spain. Montech Serwis had a team onboard.</p>
+                <ul>
+                    <li class="text3">Prefabrication of 6 new cabanas in our workshop in Poland and installing them on the ship,</li>
+                    <li class="text4">Prefabricating and installing 2 new stainless-steel showers in glasshouse,</li>
+                    <li class="text5">Steel repair of corroded plate,</li>
+                    <li class="text6">All stainless-steel work in remodeling of bars,</li>
+                    <li class="text7">All water connection and new grey and black water lines for rebuilding new public toilets,</li>
+                    <li class="text8">Installation of toilets, vanity units and urinals,</li>
+                    <li class="text9">Sprinkler modification.</li>
+                </ul>
+                <center>
+                    <div class="pictures">
+                    <a href="cabana1.JPG" alt="Montech servce 1"><img src="cabana1low.JPG" alt="Ship cabin 1"></a>
+                    <a href="cabana2.JPG" alt="Montech servce 2"><img src="cabana2low.JPG" alt="Ship cabin 2"></a>
+                    <a href="cabana3.JPG" alt="Montech servce 3"><img src="cabana3low.JPG" alt="Ship cabin 3"></a>
+                    <a href="cabana4.JPG" alt="Montech servce 4"><img src="cabana4low.JPG" alt="Ship cabin 4"></a>
+                    <a href="cabana5.JPG" alt="Montech servce 5"><img src="cabana5low.JPG" alt="Ship cabin 5"></a>
+                    <a href="cabana6.JPG" alt="Montech servce 6"><img src="cabana6low.JPG" alt="Ship cabin 6"></a>
+                    <a href="cabana7.JPG" alt="Montech servce 7"><img src="cabana7low.JPG" alt="Ship cabin 7"></a>
+                    <a href="cabana8.JPG" alt="Montech servce 8"><img src="cabana8low.JPG" alt="Ship cabin 8"></a>
+                    <a href="cabana9.JPG" alt="Montech servce 9"><img src="cabana9low.JPG" alt="Ship cabin 9"></a>
+                    <a href="IMG_0010.JPG" alt="Montech servce 10"><img src="IMG_0010low.JPG" alt="Ship work 1"></a>
+                    <a href="IMG_0027.JPG" alt="Montech servce 11"><img src="IMG_0027low.JPG" alt="Ship work 2"></a>
+                    <a href="IMG_0041.JPG" alt="Montech servce 12"><img src="IMG_0041low.JPG" alt="Ship work 3"></a>
+                    <a href="IMG_0072.JPG" alt="Montech servce 13"><img src="IMG_0072low.JPG" alt="Ship work 4"></a>
+                    <a href="IMG_0088.JPG" alt="Montech servce 14"><img src="IMG_0088low.JPG" alt="Ship work 5"></a>
+                    <a href="IMG_0092.JPG" alt="Montech servce 15"><img src="IMG_0092low.JPG" alt="Ship work 6"></a>
+                    <a href="IMG_0108.JPG" alt="Montech servce 16"><img src="IMG_0108low.JPG" alt="Ship work 7"></a>
+                    <a href="Marella.JPG" alt="Montech servce 17"><img src="Marellalow.JPG" alt="Marella"></a>
+                    </div>
+                </center>
+                <br>
+                <a href="Projects.html" class="text10">Return to all projects</a>
+                <script>
+                    const langELv2 = document.querySelector('.langWarp');
+                    const butElv2 = document.querySelectorAll('button');
+                    const titleElv10 = document.querySelector('.tytul1');
+                    const titleElv11 = document.querySelector('.text1');
+                    const titleElv12 = document.querySelector('.text2');
+                    const titleElv13 = document.querySelector('.text3');
+                    const titleElv14 = document.querySelector('.text4');
+                    const titleElv15 = document.querySelector('.text5');
+                    const titleElv16 = document.querySelector('.text6');
+                    const titleElv17 = document.querySelector('.text7');
+                    const titleElv18 = document.querySelector('.text8');
+                    const titleElv19 = document.querySelector('.text9');
+                    const titleElv100 = document.querySelector('.text10');
+                    butElv2.forEach(el =>{
+                      el.addEventListener('click', () =>
+                      {
+                        langELv2.querySelector('.active').classList.remove('active');
+                        el.classList.add('active');
+                        const attr = el.getAttribute('language');
+                        titleElv10.textContent= datav2[attr].tytul1;
+                        titleElv11.textContent= datav2[attr].text1;
+                        titleElv12.textContent= datav2[attr].text2;
+                        titleElv13.textContent= datav2[attr].text3;
+                        titleElv14.textContent= datav2[attr].text4;
+                        titleElv15.textContent= datav2[attr].text5;
+                        titleElv16.textContent= datav2[attr].text6;
+                        titleElv17.textContent= datav2[attr].text7;
+                        titleElv18.textContent= datav2[attr].text8;
+                        titleElv19.textContent= datav2[attr].text9;
+                        titleElv100.textContent= datav2[attr].text10;
+                      });
+                    });
+                    var datav2 = {
+                      "english":
+                      {
+                        "tytul1": "Project on Marella Discovery 2",
+                        "text1" : "Jan/Feb 2022",
+                        "text2" : "During Marella Discovery II dry dock in Cadiz, Spain. Montech Serwis had a team onboard.",
+                        "text3" : "Prefabrication of 6 new cabanas in our workshop in Poland and installing them on the ship,",
+                        "text4" : "Prefabricating and installing 2 new stainless-steel showers in glasshouse,",
+                        "text5" : "Steel repair of corroded plate,",
+                        "text6" : "All stainless-steel work in remodeling of bars,",
+                        "text7" : "All water connection and new grey and black water lines for rebuilding new public toilets,",
+                        "text8" : "Installation of toilets, vanity units and urinals,",
+                        "text9" : "Sprinkler modification.",
+                        "text10" : "Return to all projects",
+                        
+  
+                      },
+            
+                      "polish":
+                      {
+                        "tytul1": "Projekt na Marella Discovery 2",
+                        "text1" : "Styczeń/Luty 2022",
+                        "text2" : "Podczas suchego doku Marella Discovery II w Kadyksie w Hiszpanii. Wykonaliśmy następujące prace: ",
+                        "text3" : "Prefabrykacja 6 nowych kabin plażowych w warsztacie w polsce i montaż na statku ",
+                        "text4" : "Prefabrykacja i instalacja 2 nowych pryszniców ze stali nierdzewnej ",
+                        "text5" : "Naprawa stali skorodowanej płyty ",
+                        "text6" : "Prace ze stali nierdzewnej przy przebudowie barów ",
+                        "text7" : "Wszystkie przyłącza wodne oraz nowe szare i czarne linie wodociągowe do przebudowy nowych toalet publicznych ",
+                        "text8" : "Montaż toalet, szafek podumywalkowych i pisuarów ",
+                        "text9" : "Modyfikacja zraszaczy",
+                        "text10" : "Powrót do wszystkich projektów",
+                      }
+                    }
+                  </script>
+              </div>
+              
+        </div>
+      </div>
+      </main>
+      <footer class="text-center text-white ">
+        <br>
+        <section class="sec">
+          <marquee class="marquee"  behavior="scroll" direction="left" scrollamount="20">
+            <h1>
+          <img class="firmy" src="firma1.png" alt="Blucher">
+          <img class="firmy" src="firma2.jpg"alt="Gebierit">
+          <img class="firmy" src="firma3.png"alt="+GF+">
+          <img class="firmy" src="firma4.png"alt="Marigiff">
+          <img class="firmy" src="firma5.jpg"alt="Parker">
+          <img class="firmy" src="firma6.jpg"alt="Roxtec">
+          <img class="firmy" src="firma7.png"alt="Viege">
+         </h1>
+        </marquee>
+       </section>
+      </footer>
+    
+</body>
+</html>
