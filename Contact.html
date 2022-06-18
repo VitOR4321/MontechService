@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Montech Serwis was founded in Gdansk, Poland in 2001. The founders have long experience in the shipbuilding, ship repair and oil and gas sector. Over the years we have completed many successful projects with many of the biggest names in the cruise and oil and gas sector.">
+    <meta name="keywords" content="Montech Serwis, ships, welding, plumbing, piping, repair,stainless steel, aluminium">
+    <link href="style.css" rel="stylesheet">
+    <meta autor="VitOR4321">
+    <title>Montech Service Marine</title>
+    <!-- Bootstrap css CDN-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"/>
+</head>
+<body>
+    <nav class="navbar navbar-custom">
+        <div class="container-md">
+            <div class="logo">
+                <img src="Logo_header.png" width="200" height="140" alt="Logo Montech Service">
+            </div> 
+            <div class="buttons">
+              <div class="langWarp">
+                  <center>
+                <a class="hrefv1"id="linki" href="index.html" class="btn btn-info btn-lg" role="button">About Us</a>
+                <a class="hrefv3"id="linki" href="Projects.html" class="btn btn-info btn-lg" role="button">Projects</a>
+                <a class="hrefv4"id="linki" href="Contact.html" class="btn btn-info btn-lg" role="button">Contact Us</a>
+                <button language="english" class="active" id="linki" class="btn btn-info btn-lg"><img src="eng.png" alt="Angielski język"></button>
+                <button language="polish" id="linki" class="btn btn-info btn-lg"><img src="flaga-polski.png" alt="Polski język"></button>
+            </center>
+                <script>
+                  const langELv1 = document.querySelector('.langWarp');
+                  const butElv1 = document.querySelectorAll('button');
+                  const titleElv11 = document.querySelector('.hrefv1');
+                  const titleElv13 = document.querySelector('.hrefv3');
+                  const titleElv14 = document.querySelector('.hrefv4');
+                  butElv1.forEach(el =>{
+                    el.addEventListener('click', () =>
+                    {
+                      langELv1.querySelector('.active').classList.remove('active');
+                      el.classList.add('active');
+                      const attr = el.getAttribute('language');
+                      titleElv11.textContent= datav1[attr].hrefv1;
+                      titleElv13.textContent= datav1[attr].hrefv3;
+                      titleElv14.textContent= datav1[attr].hrefv4;
+                    });
+                  });
+                  var datav1 = {
+                    "english":
+                    {
+                      "hrefv1": "About Us",
+                      "hrefv3": "Projects",
+                      "hrefv4": "Contact Us",
+
+                    },
+          
+                    "polish":
+                    {
+                      "hrefv1": "O Nas",
+                      "hrefv3": "Projekty",
+                      "hrefv4": "Kontakty",
+                    }
+                  }
+                </script>
+              </div>
+            </div>
+        </div>
+      </nav>
+      <main>
+        <div class="mainContact">
+        <center>
+        <div class="container-md">
+          <div class="row">
+            <div class="col">
+                <img src="phone.png"alt="phone">
+            </div>
+            <div class="col" id="teksty">
+              <p>+48500601240</p>
+              <p>+48698125290</p>
+            </div>
+            <div class="w-100"></div>
+            <div class="col">
+              <img src="mail.png" alt="mail">
+            </div>
+            <div class="col" id="teksty">
+              <p>office@montechserwis.com</p>
+              <p>montechserwis@gmail.com</p>
+            </div>
+            <!--
+            <div class="w-100"></div>
+            <div class="col">
+              <img src="fb.png">
+            </div>
+            <div class="col" id="teksty">
+              <p><a href="https://www.facebook.com/people/Montech-Serwis/100057310695407/">Montech-Serwis-FaceBook</a></p>
+            </div>
+            -->
+          </div>
+        </div>
+      </center>
+      </div>
+      </main>
+     
+      <footer class="text-center text-white ">
+        <br>
+        <section class="sec">
+       <marquee class="marquee"  behavior="scroll" direction="left" scrollamount="20">
+         <h1>
+       <img class="firmy" src="firma1.png" alt="Blucher">
+       <img class="firmy" src="firma2.jpg"alt="Gebierit">
+       <img class="firmy" src="firma3.png"alt="+GF+">
+       <img class="firmy" src="firma4.png"alt="Marigiff">
+       <img class="firmy" src="firma5.jpg"alt="Parker">
+       <img class="firmy" src="firma6.jpg"alt="Roxtec">
+       <img class="firmy" src="firma7.png"alt="Viege">
+      </h1>
+     </marquee>
+    </section>
+      </footer>
+    
+</body>
+</html>
